@@ -45,6 +45,26 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Build and running app with Docker
+```powershell
+# Build your image:
+docker build <your path> -t <<user>/project-name>
+
+# Run:
+docker run -p 8080:3000 <<user>/project-name>
+
+# Run app after config all:
+docker-compose up
+
+# For Example:
+docker build .\task-nest\ -t hoangtd/task-nest
+docker run -p 8080:3000 hoangtd/task-nest
+
+# Basic Docker Commands:
+List your docker images: docker images
+List your running containers: docker ps
+```
+
 ## Test
 
 ```bash
